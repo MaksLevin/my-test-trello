@@ -1,0 +1,24 @@
+<section class="login">
+  <div class="login-wrapper">
+    <h1 class="title">My Trello <mat-icon color="warn">favorite</mat-icon></h1>
+    <h3 class="sub-title">Sign in</h3>
+    <mat-form-field appearance="fill">
+      <mat-label>Enter your email</mat-label>
+      <input matInput placeholder="pat@example.com" required />
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Enter your password</mat-label>
+      <input matInput [type]="hide ? 'password' : 'text'" />
+      <button
+        mat-icon-button
+        matSuffix
+        (click)="hide = !hide"
+        [attr.aria-label]="'Hide password'"
+        [attr.aria-pressed]="hide"
+      >
+        <mat-icon>{{ hide ? "visibility_off" : "visibility" }}</mat-icon>
+      </button>
+    </mat-form-field>
+    <button class="button-login" mat-raised-button color="primary">sign in</button>
+  </div>
+</section>

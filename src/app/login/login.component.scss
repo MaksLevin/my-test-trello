@@ -1,0 +1,35 @@
+.login {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  &-wrapper {
+    width: 540px;
+    display: flex;
+    flex-direction: column;
+    background-color: #eceff1;
+    padding: 35px;
+    border-radius: 25px;
+    box-shadow: 0 6px 17px rgb(0 0 0 / 25%);
+  }
+}
+
+.title {
+  font-size: 36px;
+  text-align: center;
+}
+.sub-title {
+  font-size: 20px;
+  text-align: center;
+}
+
+.button-login {
+  text-transform: uppercase;
+}
