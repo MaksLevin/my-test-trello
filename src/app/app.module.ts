@@ -8,21 +8,17 @@ import { SharedModule } from './shared/shared.module';
 import { LoginModule } from './login/login.module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     SharedModule,
-    LoginModule
+    LoginModule,
   ],
-  exports: [
-    SharedModule,
-  ],
-  schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
+  exports: [SharedModule],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
