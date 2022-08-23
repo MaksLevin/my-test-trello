@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormControl, FormsModule, Validators } from '@angular/forms';
 
 import { LoginComponent } from './login.component';
+import { LoginRoutingModule } from './login-routing.module';
 import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
@@ -11,7 +12,8 @@ import { SharedModule } from '../shared/shared.module';
   imports: [
     CommonModule,
     FormsModule,
-    SharedModule
+    SharedModule,
+    LoginRoutingModule,
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })

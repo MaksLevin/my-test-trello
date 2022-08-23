@@ -5,7 +5,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
-import { LoginModule } from './login/login.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -14,7 +13,6 @@ import { LoginModule } from './login/login.module';
     AppRoutingModule,
     BrowserAnimationsModule,
     SharedModule,
-    LoginModule,
   ],
   exports: [SharedModule],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
