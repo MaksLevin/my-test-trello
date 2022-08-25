@@ -6,11 +6,11 @@
     <h3 class="sub-title">Sign in</h3>
     <mat-form-field appearance="fill">
       <mat-label>Enter your email</mat-label>
-      <input matInput placeholder="pat@example.com" required />
+      <input matInput placeholder="pat@example.com" name="email" [(ngModel)]="email" required />
     </mat-form-field>
     <mat-form-field appearance="fill">
       <mat-label>Enter your password</mat-label>
-      <input matInput [type]="hide ? 'password' : 'text'" />
+      <input matInput name="password" [(ngModel)]="password" [type]="hide ? 'password' : 'text'" />
       <button
         matSuffix
         mat-icon-button
@@ -21,6 +21,6 @@
         <mat-icon>{{ hide ? "visibility_off" : "visibility" }}</mat-icon>
       </button>
     </mat-form-field>
-    <button class="button-login" mat-raised-button>sign in</button>
+    <button class="button-login" mat-raised-button (click)="login()">sign in</button>
   </div>
 </section>
