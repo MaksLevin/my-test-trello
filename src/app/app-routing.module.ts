@@ -5,14 +5,19 @@ import { NotFoundComponent } from './not-found/not-found.component';
 
 const routes: Routes = [
   {
+    path: '',
+    redirectTo: '/sign-in',
+    pathMatch: 'full',
+  },
+  {
     path: 'sign-in',
     loadChildren: () =>
       import('./login/login.module').then((m) => m.LoginModule),
   },
   {
-    path: '',
-    redirectTo: '/sign-in',
-    pathMatch: 'full',
+    path: 'dashboard',
+    loadChildren: () =>
+      import('./dashboard/dashboard.module').then((m) => m.DashboardModule),
   },
   {
     path: '**',

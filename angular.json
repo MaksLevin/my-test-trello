@@ -102,6 +102,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "my-test-trello:build:production",
+            "firebaseProject": "test-trello-5ad41",
+            "firebaseHostingSite": "test-trello-5ad41"
+          }
         }
       }
     }
